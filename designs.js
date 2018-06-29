@@ -1,8 +1,11 @@
+// Declaring the variables to be used in the function
 let height, width, color, reset;
+// The function that creates the grid
 function makeGrid() {
     $("#pixel_canvas").html("");
     height = $("#input_height").val();
     width = $("#input_width").val();
+    //Setting the maximum height and width for the app
     if (height > 50 || width > 50 || height < 1 || width < 1) {
         if (!error.classList.contains("error")) {
             error.classList.toggle("error");
